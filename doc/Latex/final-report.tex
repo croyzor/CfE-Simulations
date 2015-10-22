@@ -1,0 +1,193 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{fullpage}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Interactive Simulations for CfE Physics}
+\author{Craig Roy\vspace{0.5cm}\\Supervisor: Gordon Robb\vspace{0.5cm}\\University of Strathclyde}
+\date{}
+\begin{document}
+
+\maketitle
+
+
+\section*{Introduction}
+\subsection*{Aim}
+The aim of this project was to create interactive simulations to aid the teaching of the new Higher and Advanced Higher Physics Curriculum for Excellence courses.
+
+\subsection*{Motivation}
+Since the Curriculum for Excellence programme was implemented, there has been a demand for resources to aid in teaching the new elements of the Higher and Advanced Higher Physics curriculum.
+
+\subsection*{Choice of topics}
+The topics chosen for this project were:
+\begin{itemize}
+\item Special Relativity
+\item Particle Accelerators
+\item The Doppler Effect
+\end{itemize}
+These topics were all introduced with the Curriculum for excellence
+program. The topics were chosen for this project from a
+SUPA\textsuperscript{\cite{supa}} video competition with the same goal of creating more
+resources for the new physics courses.
+
+\subsection*{Practical considerations}
+The tool used to create the simulations was a program called EjsS or
+``Easy Java(Script) Simulations''. EjsS\textsuperscript{\cite{ejs}} is a tool created as a part of the Open Source Physics project. It is designed to make creating computer simulations easy for people such as science teachers and students who are otherwise unfamiliar with programming in Java or JavaScript.
+
+This program was chosen so that simulations could be developed with
+relative ease, and so that there is a no barrier to entry for someone
+who wants to modify the simulations. Developing the simulations as
+Java programs also meets the needs of physics teachers who cannot
+access the internet while teaching to view Flash simulations or Java Applets.
+
+\section*{The Simulations}
+\subsubsection*{Topic: Our Dynamic Universe}
+\subsubsection*{Subtopic: Special relativity}
+The first simulation shows a pair of digital clocks. One relatively stationary in a lab, and the other travelling at a relativistic speed specified by the user. The observer is in the reference frame of the lab clock and can observe the slowing down of the moving clock.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\linewidth]{./digitalUI.png}
+\caption{Screenshot of the digital clock simulation}
+\end{figure}
+
+\subsection*{Analogue Clocks}
+\subsubsection*{Topic: Our Dynamic Universe}
+\subsubsection*{Subtopic: Special relativity}
+The second simulation shows a pair of analogue clocks, one of which is
+travelling at relativistic speeds. In this simulation, the observer is in the reference frame of the clock travelling at a relativistic speed specified by the user. The user can observe that the stationary clock speeds up as the velocity is increased.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{./analogueUI.png}
+\caption{Screenshot of the analogue clock simulation}
+\end{figure}
+
+\subsection*{Photon Clocks}
+\subsubsection*{Topic: Our Dynamic Universe}
+\subsubsection*{Subtopic: Special relativity}
+ This simulation shows a pair of model photon clocks, with a `photon'
+ bouncing between two mirrors. The user is in the reference frame of
+ the lab clock. As the user sets the speed of the moving clock, it
+ begins to move across the window. At relativistic speeds, the motion
+ of the photon appears to slow and the moving photon clock contracts
+ in size due to time dilation. This simulation was inspired by a
+ similar flash simulation developed by the King's Center for
+ Visualisation in Science\textsuperscript{\cite{rocket}}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\linewidth]{./mirrorUI.png}
+\caption{Screenshot of the photon clock simulation}
+\end{figure}
+
+\newpage
+\subsection*{Cyclotron}
+\subsubsection*{Topic: Electromagnetism}
+\subsubsection*{Subtopic: Particle Accelerators}
+This simulation models a cyclotron particle accelerator which is
+relevant to the electromagnetism section of the Advanced Higher
+course. The user may set variables such as the strength of the
+electric field, the charge of the particle, and the frequency of
+oscillation of the electric field and the accelerator will apply the
+Lorentz force accordingly. This simulation was inspired by a similar
+Java Applet created by the National Taiwan Normal University\textsuperscript{\cite{cyclotron}}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\linewidth]{./cycloUI.png}
+\caption{Screenshot of the cyclotron simulation}
+\end{figure}
+
+\subsection*{Doppler Effect}
+\subsubsection*{Topic: Our Dynamic Universe}
+\subsubsection*{Subtopic: The Expanding Universe}
+This simulation demonstrates the concept of the doppler shift as well
+as the concept of using spectroscopy on exoplanets. The simulation
+consists of a model exoplanet which is orbiting a star. The planet is
+being monitored using spectroscopy. The absorption lines are shown on
+a spectrum of visible light at the bottom of the window. The user
+chooses the angular velocity of the planet and star, and a Doppler
+shift is applied to the spectral lines when the planet is moving
+towards the observer or further away. This experiment was inspired by
+a similar Flash simulation created by the University of Nebraska-Lincoln\textsuperscript{\cite{doppler}}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\linewidth]{./dopplerUI.png}
+\caption{Screenshot of the Doppler Effect simulation}
+\end{figure}
+
+\section*{Conclusion}
+These simulations were produced during the limited time frame of the
+project which was six weeks. Given more time, more of the
+syllabus could be covered by such simulations.
+
+All of the simulations produced in this project are open source and
+available online\textsuperscript{\cite{repo}}. They can be easily used
+or modified by anyone with the inclination.
+
+\section*{Acknowledgements}
+We acknowledge and are grateful for partial support from the Scottish Universities Physics Alliance.
+
+\newpage
+\begin{thebibliography}{1}
+
+\bibitem{supa}
+  SUPA Video Competition,
+  \url{http://www.supa.ac.uk/events/supa_videos_2014}
+
+\bibitem{ejs}
+  Easy Java(Script) Simulations,
+  Francisco Esquembre,
+  Open Source Physics,
+  \url{http://fem.um.es/Ejs}
+
+\bibitem{rocket}
+  Photon Clock,
+  Special Relativity,
+  King's Center for Visualization in Science,
+  \url{http://www.kcvs.ca/site/projects/specialRelativity.html#Photon_Clock}
+
+\bibitem{cyclotron}
+  Cyclotron Applet,
+  Fu-Kwun Hwang,
+  Dept. of physics,
+  National Taiwan Normal University,
+  Modified: 11/14/2007,
+  \url{http://www.schulphysik.de/ntnujava/cyclotron/cyclotron.html}
+
+\bibitem{doppler}
+  Extrasolar Planet Radial Velocity Demonstrator,
+  University of Nebraska-Lincoln,  \url{http://astro.unl.edu/classaction/animations/light/radialvelocitydemo.html}
+
+\bibitem{repo}
+  Github, ComPADRE TBA
+
+\end{thebibliography}
+
+\newpage
+\appendix
+\section{Special Relativity Report}
+\input{relativity-appendix.tex}
+
+\newpage
+\section{Cyclotron Report}
+\input{./cyclotron-appendix.tex}
+
+\newpage
+\section{Doppler Effect Report}
+\input{./doppler-appendix.tex}
+
+\end{document}
